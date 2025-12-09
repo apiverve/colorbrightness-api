@@ -1,0 +1,82 @@
+openapi: 3.0.4
+info:
+  title: Color Brightness Calculator
+  description: Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/colorbrightness:
+    get:
+      summary: Calculate Color Brightness
+      description: Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.
+      operationId: colorbrightness
+      parameters:
+      - name: hex
+        in: query
+        schema:
+          type: string
+        required: true
+        description: 'Hex color value (with or without # prefix)'
+        example: FF5733
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  hex: '#FF5733'
+                  rgb:
+                    r: 255
+                    g: 87
+                    b: 51
+                  luminance: 0.2832
+                  perceived_brightness: 131
+                  yiq: 133.13
+                  is_light: false
+                  is_dark: true
+                  brightness_category: dark
+                  recommended_text_color: '#FFFFFF'
+                  contrast_ratio_with_white: 3.15
+                  contrast_ratio_with_black: 6.66
+                  wcag_aa_compliant_with_white: false
+                  wcag_aa_compliant_with_black: true
+                  wcag_aaa_compliant_with_white: false
+                  wcag_aaa_compliant_with_black: false
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
