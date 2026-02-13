@@ -1,32 +1,35 @@
 openapi: 3.0.4
 info:
   title: Color Brightness Calculator
-  description: Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.
+  description: >-
+    Color Brightness Calculator is a tool for calculating color brightness and
+    luminance. It determines if a color is light or dark using WCAG 2.0
+    standards and provides contrast ratios for accessibility compliance.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/colorbrightness:
     get:
       summary: Calculate Color Brightness
-      description: Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.
+      description: Calculate brightness, luminance, and contrast ratios for a color
       operationId: colorbrightness
       parameters:
-      - name: hex
-        in: query
-        schema:
-          type: string
-        required: true
-        description: 'Hex color value (with or without # prefix)'
-        example: FF5733
+        - name: hex
+          in: query
+          schema:
+            type: string
+          required: true
+          description: 'Hex color value (with or without # prefix)'
+          example: FF5733
       responses:
         '200':
           description: Successful Response
@@ -42,11 +45,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   hex: '#FF5733'
                   rgb:
@@ -71,7 +74,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -79,4 +82,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
