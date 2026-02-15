@@ -1,1 +1,3 @@
-from .apiClient import ColorbrightnessAPIClient
+from .apiClient import ColorbrightnessAPIClient, ColorbrightnessAPIClientError
+
+__all__ = ['ColorbrightnessAPIClient', 'ColorbrightnessAPIClientError']
