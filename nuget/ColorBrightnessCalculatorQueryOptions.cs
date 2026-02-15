@@ -12,7 +12,6 @@ namespace APIVerve.API.ColorBrightnessCalculator
     {
         /// <summary>
         /// Hex color value (with or without # prefix)
-        /// Example: FF5733
         /// </summary>
         [JsonProperty("hex")]
         public string Hex { get; set; }
