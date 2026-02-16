@@ -1,0 +1,16 @@
+name: apiverve_colorbrightness
+description: Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.
+version: 1.1.14
+homepage: https://apiverve.com/marketplace/colorbrightness?utm_source=dart&utm_medium=homepage
+repository: https://github.com/apiverve/colorbrightness-api/tree/main/dart
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
