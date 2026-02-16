@@ -234,8 +234,9 @@ from apiverve_colorbrightnesscalculator.apiClient import ColorbrightnessAPIClien
 
 api = ColorbrightnessAPIClient("[YOUR_API_KEY]")
 
+query = { "hex": "FF5733" }
+
 try:
-    query = { "hex": "FF5733" }
     result = api.execute(query)
     print(result)
 finally:
