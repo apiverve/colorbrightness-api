@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/colorbrightness",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.",
   "main": "index.js",
   "types": "index.d.ts",
