@@ -30,7 +30,11 @@ The Color Brightness Calculator API provides a simple, reliable way to integrate
 ```javascript
 async function callColorBrightnessCalculatorAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/colorbrightness', {
+        const params = new URLSearchParams({
+            hex: 'FF5733'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/colorbrightness?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +54,7 @@ callColorBrightnessCalculatorAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/colorbrightness?param=value" \
+curl -X GET "https://api.apiverve.com/v1/colorbrightness?hex=FF5733" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +154,7 @@ go get github.com/apiverve/colorbrightness-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +173,7 @@ go get github.com/apiverve/colorbrightness-api/go
 The Color Brightness Calculator API is commonly used for:
 
 - **Web Applications** - Add color brightness calculator features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with color brightness calculator capabilities
 - **Data Pipelines** - Process and analyze data at scale
