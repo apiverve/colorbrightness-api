@@ -191,11 +191,46 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Color Brightness Calculator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "hex": "#FF5733",
+    "rgb": {
+      "r": 255,
+      "g": 87,
+      "b": 51
+    },
+    "luminance": 0.2832,
+    "perceived_brightness": 131,
+    "yiq": 133.13,
+    "is_light": false,
+    "is_dark": true,
+    "brightness_category": "dark",
+    "recommended_text_color": "#FFFFFF",
+    "contrast_ratio_with_white": 3.15,
+    "contrast_ratio_with_black": 6.66,
+    "wcag_aa_compliant_with_white": false,
+    "wcag_aa_compliant_with_black": true,
+    "wcag_aaa_compliant_with_white": false,
+    "wcag_aaa_compliant_with_black": false
+  }
 }
 ```
 
