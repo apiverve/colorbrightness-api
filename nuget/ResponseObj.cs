@@ -25,6 +25,9 @@ namespace APIVerve.API.ColorBrightnessCalculator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -36,19 +39,19 @@ namespace APIVerve.API.ColorBrightnessCalculator
         public Rgb Rgb { get; set; }
 
         [JsonProperty("luminance")]
-        public double Luminance { get; set; }
+        public double? Luminance { get; set; }
 
         [JsonProperty("perceived_brightness")]
-        public long PerceivedBrightness { get; set; }
+        public long? PerceivedBrightness { get; set; }
 
         [JsonProperty("yiq")]
-        public double Yiq { get; set; }
+        public double? Yiq { get; set; }
 
         [JsonProperty("is_light")]
-        public bool IsLight { get; set; }
+        public bool? IsLight { get; set; }
 
         [JsonProperty("is_dark")]
-        public bool IsDark { get; set; }
+        public bool? IsDark { get; set; }
 
         [JsonProperty("brightness_category")]
         public string BrightnessCategory { get; set; }
@@ -57,33 +60,45 @@ namespace APIVerve.API.ColorBrightnessCalculator
         public string RecommendedTextColor { get; set; }
 
         [JsonProperty("contrast_ratio_with_white")]
-        public double ContrastRatioWithWhite { get; set; }
+        public double? ContrastRatioWithWhite { get; set; }
 
         [JsonProperty("contrast_ratio_with_black")]
-        public double ContrastRatioWithBlack { get; set; }
+        public double? ContrastRatioWithBlack { get; set; }
 
         [JsonProperty("wcag_aa_compliant_with_white")]
-        public bool WcagAaCompliantWithWhite { get; set; }
+        public bool? WcagAaCompliantWithWhite { get; set; }
 
         [JsonProperty("wcag_aa_compliant_with_black")]
-        public bool WcagAaCompliantWithBlack { get; set; }
+        public bool? WcagAaCompliantWithBlack { get; set; }
 
         [JsonProperty("wcag_aaa_compliant_with_white")]
-        public bool WcagAaaCompliantWithWhite { get; set; }
+        public bool? WcagAaaCompliantWithWhite { get; set; }
 
         [JsonProperty("wcag_aaa_compliant_with_black")]
-        public bool WcagAaaCompliantWithBlack { get; set; }
+        public bool? WcagAaaCompliantWithBlack { get; set; }
     }
 
     public partial class Rgb
     {
         [JsonProperty("r")]
-        public long R { get; set; }
+        public long? R { get; set; }
 
         [JsonProperty("g")]
-        public long G { get; set; }
+        public long? G { get; set; }
 
         [JsonProperty("b")]
-        public long B { get; set; }
+        public long? B { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
