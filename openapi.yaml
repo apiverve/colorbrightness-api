@@ -2,9 +2,9 @@ openapi: 3.0.4
 info:
   title: Color Brightness Calculator
   description: >-
-    Color Brightness Calculator is a tool for calculating color brightness and
-    luminance. It determines if a color is light or dark using WCAG 2.0
-    standards and provides contrast ratios for accessibility compliance.
+    Color Brightness Calculator checks hex color brightness to classify values
+    as light, dark, or medium, returning RGB components. Paid plans add WCAG
+    contrast ratios, luminance scores, and recommended text colors.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/colorbrightness:
     get:
-      summary: Calculate Color Brightness
+      summary: Color Brightness Calculator
       description: Calculate brightness, luminance, and contrast ratios for a color
       operationId: colorbrightness
       parameters:

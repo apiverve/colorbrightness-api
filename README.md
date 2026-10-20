@@ -1,13 +1,13 @@
-# [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.
+Color Brightness Calculator checks hex color brightness to classify values as light, dark, or medium, returning RGB components. Paid plans add WCAG contrast ratios, luminance scores, and recommended text colors.
 
 The Color Brightness Calculator API provides a simple, reliable way to integrate color brightness calculator functionality into your applications. Built for developers who need production-ready color brightness calculator capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/colorbrightness-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/colorbrightness](https://docs.apiverve.com/ref/colorbrightness)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -238,7 +238,7 @@ A real response from the Color Brightness Calculator API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
