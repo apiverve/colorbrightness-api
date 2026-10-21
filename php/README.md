@@ -1,6 +1,6 @@
 # Color Brightness Calculator API - PHP Package
 
-Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.
+Color Brightness Calculator checks hex color brightness to classify values as light, dark, or medium, returning RGB components. Paid plans add WCAG contrast ratios, luminance scores, and recommended text colors.
 
 ## Installation
 
@@ -99,11 +99,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/colorbrightness?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/colorbrightness?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/colorbrightness?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/colorbrightness?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/colorbrightness?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/colorbrightness?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
