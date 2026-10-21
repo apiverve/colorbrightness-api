@@ -1,7 +1,7 @@
 {
     "name": "apiverve/colorbrightness",
-    "description": "Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.",
-    "version": "1.2.0",
+    "description": "Color Brightness Calculator checks hex color brightness to classify values as light, dark, or medium, returning RGB components. Paid plans add WCAG contrast ratios, luminance scores, and recommended text colors.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -21,7 +21,7 @@
         "light dark",
         "wcag contrast"
     ],
-    "homepage": "https://apiverve.com/marketplace/colorbrightness?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/colorbrightness?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/colorbrightness",
