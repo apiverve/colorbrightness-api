@@ -1,8 +1,8 @@
 /// Color Brightness Calculator API client for Dart/Flutter
 ///
-/// Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.
+/// Color Brightness Calculator checks hex color brightness to classify values as light, dark, or medium, returning RGB components. Paid plans add WCAG contrast ratios, luminance scores, and recommended text colors.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/colorbrightness?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/colorbrightness?utm_source=dart&utm_medium=referral&utm_content=readme
 library apiverve_colorbrightness;
 
 export 'src/client.dart';

@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Color Brightness Calculator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/colorbrightness?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/colorbrightness?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [hex] (required) - Hex color value (with or without # prefix) [format: hexColor]

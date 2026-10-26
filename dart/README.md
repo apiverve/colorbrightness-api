@@ -1,11 +1,11 @@
 # Color Brightness Calculator API - Dart/Flutter Client
 
-Color Brightness Calculator is a tool for calculating color brightness and luminance. It determines if a color is light or dark using WCAG 2.0 standards and provides contrast ratios for accessibility compliance.
+Color Brightness Calculator checks hex color brightness to classify values as light, dark, or medium, returning RGB components. Paid plans add WCAG contrast ratios, luminance scores, and recommended text colors.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_colorbrightness.svg)](https://pub.dev/packages/apiverve_colorbrightness)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_colorbrightness: ^1.1.14
+  apiverve_colorbrightness: ^1.2.3
 ```
 
 Then run:
@@ -77,12 +77,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/colorbrightness](https://docs.apiverve.com/ref/colorbrightness?utm_source=dart&utm_medium=readme)
+- **API Home:** [Color Brightness Calculator API](https://apiverve.com/marketplace/colorbrightness?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/colorbrightness](https://docs.apiverve.com/ref/colorbrightness?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -90,4 +90,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
